@@ -1,0 +1,3 @@
+[submodule "ZenPacks.community.Fedora"]
+	path = ZenPacks.community.Fedora
+	url = git://github.com/nyeates/ZenPacks.community.Fedora.git
