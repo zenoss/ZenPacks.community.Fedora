@@ -21,7 +21,8 @@ class ZenPack(ZenPackBase):
         """
 
         # Our objects.xml assumes that this device class exists.
-        app.zport.dmd.Devices.createOrganizer('Server/SSH/Linux/Fedora')
+        fedora = app.zport.dmd.Devices.createOrganizer(
+            'Server/SSH/Linux/Fedora')
 
         ZenPackBase.install(self, app)
 
