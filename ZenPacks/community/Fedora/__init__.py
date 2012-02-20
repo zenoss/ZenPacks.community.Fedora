@@ -19,13 +19,10 @@ class ZenPack(ZenPackBase):
         """
         Set the collector plugins for Server/SSH/Linux/Fedora
         """
-        try:
-            fedora = findFedora(app.dmd)
-        except Exception, e:
-            import traceback
-            log.debug(traceback.format_exc())
-            raise Exception('Device class Server/SSH/Linux/Fedora does not exist. '
-                            'Cannot install Fedora ZenPack.')
+
+        # Our objects.xml assumes that this device class exists.
+        app.zport.dmd.Devices.createOrganizer('Server/SSH/Linux/Fedora')
+
         ZenPackBase.install(self, app)
 
         plugins=[]
