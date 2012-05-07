@@ -5,7 +5,7 @@
 NAME = "ZenPacks.community.Fedora"
 VERSION = "1.1.1"
 AUTHOR = "Eric Edgar"
-LICENSE = ""
+LICENSE = "GPLv2"
 NAMESPACE_PACKAGES = ['ZenPacks', 'ZenPacks.community']
 PACKAGES = ['ZenPacks', 'ZenPacks.community', 'ZenPacks.community.Fedora']
 INSTALL_REQUIRES = ['ZenPacks.community.LinuxMonitorAddOn>=1.0']
